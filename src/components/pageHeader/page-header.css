@@ -1,0 +1,36 @@
+header.mobile-page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--primary-white-color);
+}
+
+div.mobile-page-header-container {
+  width: 61%;
+  height: clamp(5.2rem, 5.2vw, 9.4rem);
+  padding: 0rem 1.8rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: clamp(1.9rem, 1.9vw, 2rem); */
+}
+
+.mobile-page-header-container img {
+  width: clamp(4rem, 4vw, 5.3rem);
+  height: clamp(3.9rem, 3.9vw, 5.2rem);
+}
+
+h1.mobile-page-header-title {
+  height: 3.3rem;
+  font-size: clamp(2rem, 2vw, 2.2rem);
+  font-weight: var(--small-fw);
+  line-height: 3.3rem;
+  padding: 0rem 1.8rem;
+  margin-bottom: 1rem;
+}
+
+hr.mobile-page-header-line-break {
+  border-bottom: 0.1rem solid #00000069;
+  height: 0.0001rem;
+}

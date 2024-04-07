@@ -1,0 +1,51 @@
+section.article-section {
+  background-color: hsla(222, 88%, 13%, 0.6);
+  min-height: 105.6rem;
+  max-height: 137.2rem;
+  background: url("./assets/images/support-hand.png") center no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(0.5rem) brightness(1.2);
+  border: 0.1rem solid rgba(255, 255, 255, 0.35);
+  width: clamp(28rem, 100%, 144rem);
+  background-color: #04163f99;
+  background-blend-mode: soft-light;
+}
+
+div.article-wrapper {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  width: clamp(20rem, 87%, 110.2rem);
+  margin: 0 auto;
+  margin-top: 5.2rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(2.5rem);
+  color: var(--primary-white-color);
+  margin-bottom: 5.2rem;
+}
+
+h2.about-head {
+  font-size: clamp(var(--m-medium-font-title), 3vw, 5rem);
+  font-weight: var(--normal-fw);
+  line-height: clamp(normal, 3vw, 6.95rem);
+}
+
+article.about-article {
+  width: clamp(18rem, 93%, 95.2rem);
+  /* min-height: 20.8rem; edit or remove */
+  margin-bottom: 3rem;
+}
+
+.about-article h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(var(--m-tertiary-font), 3vw, 3rem);
+  font-weight: var(--normal-fw);
+  line-height: clamp(2.194rem, 3vw, 3.657rem);
+}
+
+.about-article p {
+  font-size: clamp(var(--m-medium-text-size), 3vw, 2.5rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 3vw, 3.48rem);
+}

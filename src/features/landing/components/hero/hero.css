@@ -1,0 +1,98 @@
+section.hero-section {
+  background-image: url("./assets/images/hero-bg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no repeat;
+  width: clamp(28rem, 100%, 144rem);
+}
+
+article.hero-article {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  width: clamp(23rem, 87.4%, 99.5rem);
+  margin: 0 auto;
+}
+
+h1.hero-head {
+  position: relative;
+  color: var(--primary-white-color);
+  width: clamp(20.1rem, 77%, 97.5rem);
+  margin-top: 1.8rem;
+  font-size: clamp(var(--m-big-font-title), 3.5vw, 5rem);
+  font-weight: var(--normal-fw);
+  line-height: clamp(var(--m-big-line-height), 4vw, 6.1rem);
+  text-align: center;
+}
+
+h1.hero-head span {
+  color: var(--primary-dark);
+}
+
+h1.hero-head img.plant-icon {
+  position: absolute;
+  right: 0.2rem;
+  top: -1rem;
+  width: clamp(2rem, 3vw, 5.64rem);
+  height: min(3.46rem, 6.48rem);
+}
+
+div.hero-content {
+  width: clamp(20.1rem, 87%, 82.6rem);
+}
+
+.hero-content p {
+  text-align: center;
+  font-weight: min(var(--ex-small-fw), var(--small-fw));
+  font-size: clamp(var(--m-medium-text-size), 3vw, 2.5rem);
+  line-height: clamp(var(--m-ex-small-line-height), 3vw, 3.48rem);
+  color: var(--primary-white-color);
+}
+
+div.link-container {
+  display: grid;
+  place-items: center;
+  width: clamp(10rem, 27%, 15.9rem);
+  height: min(4rem, 4.8rem);
+  border-radius: 1.2rem;
+  border: 0.1rem solid var(--primary-white-color);
+  padding: 1rem, 2rem;
+  color: var(--primary-white-color);
+}
+
+a.hero-link {
+  width: var(6rem, 16%, 11.9rem);
+  height: min(2rem, 2.4rem);
+  font-weight: clamp(var(--normal-fw), 3vw, 2rem);
+  font-size: var(--m-medium-text-size);
+  line-height: clamp(var(--m-ex-small-line-height), 2.5vw, 2.438rem);
+  color: inherit;
+}
+
+img.hero-image {
+  width: clamp(9.9rem, 26vw, 27.7rem);
+  height: clamp(9.9rem, 26vw, 27.7rem);
+}
+
+p.hero-fade-in-text {
+  font-size: clamp(1rem, 2vw, 2.2rem);
+  font-weight: 500;
+  font-style: italic;
+  line-height: clamP(1.7rem, 1.7vw, 2.682rem);
+  margin-top: clamp(0.5rem, 0.5vw, 1rem);
+  margin-bottom: clamp(1.5rem, 7vw, 8.7rem);
+  color: #000;
+  text-align: center;
+}
+
+.hero-fade-in-text span {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: calc(0.1s * var(--index));
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

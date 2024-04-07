@@ -1,0 +1,87 @@
+section.contact-section {
+  background-image: url("./assets/images/support-hand.png");
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+  background-color: #04163f99;
+  background-blend-mode: soft-light;
+  display: flex;
+  width: 38.2rem;
+  width: clamp(28rem, 100%, 144rem);
+  /* height: 75.5rem; */
+  padding: 3.9rem 2.8rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.contact-wrapper {
+  display: grid;
+  place-items: center;
+  width: clamp(20rem, 100%, 110.2rem);
+  min-height: 67.8rem;
+  max-height: 115rem;
+  padding: 1.7rem 0.5rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(2.5rem);
+  margin-top: clamp(3.9rem, 9vw, 12.6rem);
+}
+
+h2.contact-head {
+  margin-top: 1.6rem;
+  font-size: clamp(var(--m-medium-font-title), 3vw, 5rem);
+  font-weight: var(--normal-fw);
+  line-height: clamp(normal, 3vw, 6.95rem);
+  color: var(--primary-white-color);
+}
+
+form.contact-form {
+  width: clamp(20rem, 35vw, 52.4rem);
+}
+
+form.contact-form,
+div.contact-input {
+  display: grid;
+}
+
+div.form-img-container {
+  margin: 0 auto;
+  width: clamp(18.6rem, 35vw, 52.4rem);
+  height: clamp(18.6rem, 35vw, 52.4rem);
+}
+
+img.form-img {
+  width: 100%;
+  height: 100%;
+}
+
+div.contact-input {
+  margin: 0 auto;
+  margin-top: clamp(2.8rem, 3vw, 4.5rem);
+  gap: 1.6rem;
+  width: clamp(18.6rem, 72.1%, 50rem);
+}
+
+.contact-input input {
+  height: clamp(4.7rem, 5vw, 5.6rem);
+  border-radius: 1.2rem;
+  padding: 1rem;
+}
+
+.contact-input textarea {
+  height: clamp(12.2rem, 10vw, 19.5rem);
+  border-radius: 1.2rem;
+  padding: 1rem;
+}
+
+.contact-wrapper button {
+  margin: 0 auto;
+  width: clamp(18.6rem, 72.1%, 50rem);
+  background-color: #4154f1;
+  color: var(--primary-white-color);
+  height: clamp(5.2rem, 5vw, 5.4rem);
+  border-radius: 1.2rem;
+  padding: 1.5rem 3.8rem;
+  margin-top: 1.6rem;
+}

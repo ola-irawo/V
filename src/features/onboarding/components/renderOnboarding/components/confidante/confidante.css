@@ -1,0 +1,49 @@
+article.confidante-article {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  margin-top: 4.1rem;
+  border-radius: 2rem;
+  position: relative;
+  top: 10rem;
+  width: clamp(20rem, 89%, 78rem);
+  height: clamp(20rem, 20vw, 44.3rem);
+  box-shadow: 0 0.1rem 0.2rem rgb(0, 0, 0, 0.7);
+  background-color: #fff;
+}
+
+div.confidante-container {
+  width: clamp(20rem, 81%, 73.9rem);
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.confidante-form h3 {
+  font-size: clamp(var(--m-small-font-title), 2.3vw, 3.8rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 3vw, 4.632rem);
+}
+
+div.confidante-form form div.btn-container {
+  width: clamp(17rem, 39.2%, 37.3rem);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: clamp(3rem, 5.5vw, 6.6rem);
+  margin-bottom: 2rem;
+}
+
+div.confidante-form form button {
+  font-size: clamp(var(--m-small-text-size), 2vw, 2.8rem);
+  font-weight: var(--normal-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 2.3vw, 3.413rem);
+  text-align: left;
+  background: transparent;
+  color: var(--tertiary-dark);
+  padding: 0.2rem 0.9rem;
+}
+
+div.confidante-form form button:hover {
+  outline: 0.1rem solid var(--tertiary-dark);
+  border-radius: 0.5rem;
+}

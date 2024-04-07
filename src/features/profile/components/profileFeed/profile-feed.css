@@ -1,0 +1,88 @@
+section.profile-feed {
+  width: clamp(28rem, 100%, 80.6rem);
+  margin-bottom: 9rem;
+}
+
+div.profile-engagement-container {
+  /* position: sticky; */
+  top: 0;
+  background-color: #fff;
+  /* z-index: 1; */
+  /* top: clamp(5.2rem, 5.2vw, 9.4rem); */
+}
+
+div.profile-engagement-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+hr.profile-feed-line-break {
+  height: 0.05rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.5;
+}
+
+ul.profile-engagement-list {
+  display: flex;
+  justify-content: space-between;
+  width: clamp(20rem, 85.8%, 65.1rem);
+  margin: 1.7rem;
+}
+
+li.engagement-item {
+  font-size: clamp(1.2rem, 1.5vw, 2.2rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(1.463rem, 1.4vw, 2.682rem);
+  position: relative;
+  cursor: pointer;
+  /* z-index: -1; */
+}
+
+li.engagement-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  right: 0;
+  bottom: -0.2rem;
+  height: 0.1rem;
+  background-color: var(--tertiary-dark);
+  transition: width,
+    var(--normal-transition) cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+li.engagement-item:hover::after {
+  width: 100%;
+}
+
+article.post-feed,
+article.comment-feed,
+article.upvote-feed,
+article.downvote-feed {
+  margin: 0 1.8rem;
+  margin-top: 2.7rem;
+}
+
+button.active-feed {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  section.profile-feed {
+    margin-bottom: 1rem;
+  }
+
+  div.render-active-feed-container {
+    padding: 0 1.8rem;
+  }
+
+  article.post-feed,
+  article.comment-feed,
+  article.upvote-feed,
+  article.downvote-feed {
+    margin: 0 0;
+    margin-top: 2.1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}

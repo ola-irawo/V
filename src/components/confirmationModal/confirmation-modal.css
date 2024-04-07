@@ -1,0 +1,90 @@
+aside.confirmation-modal {
+  background-color: hsla(0, 0%, 10%, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  place-items: center;
+}
+
+div.confirmation-modal-wrapper {
+  background-color: #fff;
+  width: 50%;
+  min-width: 20rem;
+  height: clamp(20rem, 20vw, 30.8rem);
+  border-radius: clamp(1.2rem, 1.2vw, 2rem);
+  box-shadow: 0.2rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+  /* padding: 1rem; */
+}
+
+button.close-confirmation-modal {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  fill: #191919cc;
+}
+
+button.close-confirmation-modal svg {
+  width: clamp(1.5rem, 2.3vw, 3rem);
+  height: clamp(1.5rem, 2.3vw, 3rem);
+}
+
+h3.confirmation-modal-title {
+  text-align: center;
+  font-size: clamp(var(--m-small-font-title), 2.3vw, 3.8rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(var(--m-normal-line-height), 3vw, 4.632rem);
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+p.confirmation-modal-text {
+  font-size: clamp(1rem, 2vw, 2.5rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 2vw, 3.48rem);
+}
+
+div.confirmation-modal-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: clamp(10rem, 39.2%, 22.6rem);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: clamp(3rem, 5.5vw, 6.6rem);
+}
+
+button.confirmation-modal-confirm-btn {
+  background-color: var(--light-blue);
+  color: #fff;
+}
+
+button.confirmation-modal-cancel-btn {
+  background-color: #fff;
+  color: #000;
+}
+
+button.confirmation-modal-confirm-btn,
+button.confirmation-modal-cancel-btn {
+  width: clamp(2.5rem, 8vw, 8rem);
+  height: clamp(2rem, 4vw, 6.2rem);
+  outline: 0.05rem solid #00000080;
+  border-radius: 0.5rem;
+  font-size: clamp(1rem, 1vw, 2.8rem);
+  font-weight: 500;
+  line-height: clamp(1.7rem, 1.7vw, 3.413rem);
+  font-size: clamp(var(--m-small-text-size), 2vw, 2.8rem);
+  font-weight: var(--normal-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 2.3vw, 3.413rem);
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  button.close-confirmation-modal {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+}

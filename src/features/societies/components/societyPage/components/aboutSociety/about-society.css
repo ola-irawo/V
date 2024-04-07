@@ -1,0 +1,23 @@
+h2.society-resources-header,
+h2.society-about-header {
+  font-size: clamp(1.4rem, 1.4vw, 2.3rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(2.72, 2vw, 2.84rem);
+  margin-top: 1.8rem;
+}
+
+h2.society-resources-header {
+  margin-bottom: 0.5rem;
+}
+
+p.society-about-welcome-message,
+p.society-about-text {
+  font-size: clamp(1.2rem, 1.2vw, 1.8rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(2rem, 2vw, 2.5rem);
+}
+
+p.society-about-welcome-message {
+  font-weight: 500;
+  padding: 1rem;
+}

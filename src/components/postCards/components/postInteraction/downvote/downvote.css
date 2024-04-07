@@ -1,0 +1,11 @@
+button.downvote-btn {
+  width: auto;
+  height: 2.4rem;
+}
+
+button.downvote-btn div {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  align-items: center;
+  gap: 0.6rem;
+}

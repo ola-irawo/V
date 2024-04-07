@@ -1,0 +1,19 @@
+main.bookmark {
+  display: grid;
+  max-width: 83.5rem;
+}
+
+@media (min-width: 768px) {
+  div.bookmark-layout {
+    max-width: 80.6rem;
+  }
+
+  div.bookmark-layout {
+    border: 0.1rem solid rgba(0, 0, 0, 0.5);
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
+    border-bottom: none;
+    margin-top: clamp(0.8rem, 0.8vw, 1.1rem);
+    margin-left: 0.9rem;
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,13 @@
+aside.empty-query {
+  background-color: #fff;
+  box-shadow: 0 0.3rem 0.6rem 0.1rem #407bff26;
+  margin-top: 0.6rem;
+  border-top: 0.1rem solid #0004;
+  padding: 1.9rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+  height: 10rem;
+}
+
+h3.empty-query-message {
+  font-size: clamp(1.3rem, 1.3vw, 3rem);
+}

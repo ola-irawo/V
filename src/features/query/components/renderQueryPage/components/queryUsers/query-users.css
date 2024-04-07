@@ -1,0 +1,41 @@
+section.query-user-section {
+  padding: 0 1.8rem;
+}
+
+ul.query-user-list {
+  height: 4.6rem;
+  height: clamp(4.6rem, 4.6vw, 7.5rem);
+  margin-top: 1.9rem;
+}
+
+li.query-user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.query-user-details {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  height: 4.6rem;
+}
+
+div.query-user-img-container {
+  width: clamp(4.6rem, 4.6vw, 7.5rem);
+  height: clamp(4.6rem, 4.6vw, 7.5rem);
+  border-radius: 50%;
+}
+
+.query-user-img-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+h3.query-user-name {
+  font-size: 1.6rem;
+  font-family: 500;
+  line-height: 1.95rem;
+  color: #000000e5;
+}

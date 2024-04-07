@@ -1,0 +1,58 @@
+section.not-found-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: clamp(3rem, 5vw, 17.025rem);
+}
+
+article.not-found-page {
+  max-width: 69.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg.not-found-svg {
+  width: clamp(23.1rem, 23.1vw, 42.847rem);
+  height: clamp(18.034rem, 18.034vw, 33.45rem);
+}
+
+div.not-found-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000000cc;
+  margin-top: clamp(3.5rem, 3.5vw, 3.8rem);
+}
+
+h2.not-found-title {
+  font-size: clamp(2rem, 2vw, 3.5rem);
+  font-weight: 500;
+  line-height: clamp(2.578rem, 2.578vw, 4.102rem);
+  letter-spacing: 0.02em;
+}
+
+p.not-found-message {
+  font-size: clamp(1.2rem, 1.2vw, 2.2rem);
+  font-weight: 500;
+  line-height: clamp(1.707rem, 1.707vw, 2.682rem);
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 1.4rem;
+  max-width: 69.6rem;
+  width: clamp(20rem, 31.2vw, 69.6rem);
+}
+
+button.not-found-button {
+  font-size: clamp(1.5rem, 1.5vw, 2.8rem);
+  font-weight: 500;
+  line-height: clamp(2.194rem, 2.194vw, 3.413rem);
+  color: #fff;
+  background-color: var(--light-blue);
+  margin-top: clamp(4rem, 4vw, 4.6rem);
+  padding: 1rem;
+  border-radius: 1.2rem;
+}

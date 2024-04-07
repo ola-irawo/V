@@ -1,0 +1,122 @@
+form.profile-article {
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+  width: clamp(20rem, 89%, 78rem);
+  border-radius: 2rem;
+}
+
+div.profile-text-container {
+  display: grid;
+  gap: clamp(1rem, 1.5vw, 3rem);
+  text-align: center;
+  width: clamp(20rem, 91%, 82.3rem);
+  margin: 0 auto;
+}
+
+.profile-text-container h2 {
+  font-size: clamp(var(--m-small-font-title), 2.3vw, 3.8rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(var(--m-normal-line-height), 3vw, 4.632rem);
+}
+
+.profile-text-container p {
+  font-size: clamp(1rem, 2vw, 2.5rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 2vw, 3.48rem);
+}
+
+label.profile-file-container {
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: clamp(10rem, 39.2%, 35.7rem);
+  height: clamp(12rem, 39.2vw, 38.4rem);
+  border-radius: 1.6rem;
+  outline: 0.01rem solid #d9d9d9;
+  background-color: #d9d9d9;
+  margin: 0 auto;
+  margin-top: 1.8rem;
+  overflow: hidden;
+}
+
+input.profile-file {
+  display: none;
+}
+
+svg.profile-setup-icon {
+  position: absolute;
+  width: clamp(10rem, 39.2%, 35.7rem);
+  height: clamp(12rem, 39.2vw, 38.4rem);
+  width: 135%;
+  height: 135%;
+  fill: #fff;
+  border: none;
+}
+
+img.profile-setup-avatar {
+  position: absolute;
+  width: clamp(3rem, 10vw, 14rem);
+  height: clamp(3rem, 10vw, 14rem);
+  border-radius: 50%;
+  outline: 0.1rem solid #0008;
+}
+
+button.choose-avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+button.choose-avatar svg {
+  fill: #d9d7;
+  width: clamp(1.5rem, 2.6vw, 4.6rem);
+  height: clamp(1.5rem, 2.6vw, 4.6rem);
+  transition: fill var(--fast-transition) ease-in-out;
+}
+
+button.choose-avatar svg:hover {
+  fill: #0008;
+}
+
+div.profile-bio-container {
+  /* width: clamp(12rem, 80%, 58.2rem); 64% */
+  display: grid;
+  gap: clamp(0.5rem, 0.5vw, 1rem);
+  margin-top: clamp(2rem, 5vw, 9.6rem);
+}
+
+div.profile-bio-container h3 {
+  width: 80%;
+  margin: 0 auto;
+  font-size: clamp(1.2rem, 2vw, 2.5rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 2vw, 3.48rem);
+}
+
+.profile-bio-container h3 span {
+  font-size: clamp(1rem, 1.4vw, 1.8rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 1.9vw, 2.2rem);
+}
+
+.profile-bio-container div {
+  align-self: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+div.profile-bio-container textarea {
+  border: 0.1rem solid var(--tertiary-dark);
+  width: 100%;
+  height: clamp(12rem, 19vw, 21rem);
+  margin: 0 auto;
+  border-radius: 1.2rem;
+  padding: 1rem;
+}
+
+button.submit-bio-btn {
+  margin-bottom: clamp(2rem, 2vw, 8.4rem);
+}

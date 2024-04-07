@@ -1,0 +1,31 @@
+button.post-btn {
+  background-color: var(--light-blue);
+  border-radius: 1.2rem;
+  display: grid;
+  place-items: center;
+  width: 6rem;
+  height: 6rem;
+  font-size: var(--m-small-text-size);
+  font-weight: var(--small-fw);
+  line-height: 1.707rem;
+  color: #ffffffcc;
+  position: fixed;
+  margin-top: 1.1rem;
+  padding: 1.2rem 1.4rem 1.1rem 1.3rem;
+  right: 0.5rem;
+  bottom: 10rem;
+}
+
+@media (min-width: 1030px) {
+  button.post-btn {
+    all: unset;
+    background-color: var(--light-blue);
+    color: #fff;
+    font-size: clamp(1.4rem, 1.4vw, 1.8rem);
+    font-weight: var(--ex-small-fw);
+    line-height: 2.194rem;
+    border-radius: 1.5rem;
+    padding: 0.8rem 2.4rem;
+    text-align: center;
+  }
+}

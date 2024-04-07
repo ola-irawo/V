@@ -1,0 +1,10 @@
+section.post-page-section {
+  padding: 0 1.8rem;
+  margin-bottom: 9rem;
+}
+
+@media (min-width: 768px) {
+  section.post-page-section {
+    margin-bottom: 1rem;
+  }
+}

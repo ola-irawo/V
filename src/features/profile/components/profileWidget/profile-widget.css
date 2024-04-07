@@ -1,0 +1,45 @@
+aside.profile-widget {
+  display: none;
+}
+@media (min-width: 1030px) {
+  aside.profile-widget {
+    display: block;
+  }
+
+  div.joined-societies-wrapper {
+    width: 25.3rem;
+    margin-top: 4.4rem;
+    margin-left: 1.4rem;
+  }
+
+  .joined-societies-wrapper h3 {
+    font-size: 2.4rem;
+    font-weight: var(--small-fw);
+    line-height: 2.926rem;
+    color: #000000b2;
+  }
+
+  ul.joined-societies-list {
+    display: grid;
+    align-items: center;
+  }
+
+  li.society-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2.2rem;
+    margin-top: 4.4rem;
+  }
+
+  .society-item img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .society-item h4 {
+    font-size: 2rem;
+    font-weight: var(--ex-small-fw);
+    line-height: 2.4.38rem;
+  }
+}

@@ -1,0 +1,119 @@
+ul.reply-list {
+  max-width: 79.6rem;
+}
+
+li.reply-list-item {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
+div.reply-wrapper {
+  display: flex;
+}
+
+div.reply-profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+a.reply-profile-avatar-container {
+  width: clamp(4rem, 4vw, 5.6rem);
+  height: clamp(4rem, 4vw, 5.6rem);
+}
+
+img.reply-profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ul.reply-list li.reply-list-item:last-of-type {
+  border: none;
+}
+
+li.reply-list-item {
+  border-bottom: 0.1rem solid #9b9b9b;
+} */
+
+ul.reply-list li.reply-list-item:last-of-type div.reply-line {
+  display: none;
+}
+
+div.reply-line {
+  border-left: 0.1rem solid #9b9b9b;
+  height: 100%;
+  align-self: center;
+}
+
+div.mc {
+  width: clamp(20rem, 100%, 75.2rem);
+}
+
+div.reply-main-content {
+  padding: 0 1.7rem 1rem 1.6rem;
+}
+
+div.reply-head {
+  display: flex;
+  justify-content: space-between;
+  height: clamp(4.2rem, 4.3vw, 9.1rem);
+}
+
+h3.reply-user-name {
+  font-size: clamp(var(--m-medium-text-size), 1.8vw, 2.2rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(2rem, 2vw, 2.682rem);
+}
+
+small.reply-time {
+  font-size: clamp(0.8rem, 0.8vw, 1.2rem) !important;
+  font-family: var(--ex-small-fw);
+  line-height: clamp(1.7rem, 1.5vw, 1.95rem);
+}
+
+div.reply-menu-container {
+  height: clamp(1.9rem, 1.9vw, 2.1rem);
+}
+
+img.reply-menu {
+  height: 100%;
+}
+
+div.reply-content-container {
+  max-width: 75.2rem;
+  position: relative;
+  margin-top: 1.6rem;
+}
+
+p.reply-content {
+  font-size: clamp(var(--m-small-text-size), 1.5vw, 1.6rem);
+  font-family: var(--ex-small-fw);
+  line-height: clamp(2rem, 2vw, 2.3rem);
+  width: 100%;
+  color: #000000cc;
+}
+
+div.reply-interactions-container {
+  padding: 1.5rem 1.8rem;
+  max-width: 35.4rem;
+}
+
+div.reply-interactions-container svg {
+  width: clamp(1.4rem, 1.4vw, 2.2rem);
+  height: clamp(1.4rem, 1.4vw, 2.2rem);
+}
+
+div.reply-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.4rem;
+}
+
+.reply-interactions-container button {
+  width: clamp(1.2rem, 1.2vw, 2.2rem);
+  height: clamp(1.2rem, 1.2vw, 2.2rem);
+  background-color: transparent;
+}

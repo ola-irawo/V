@@ -1,0 +1,12 @@
+p.error-notification-message {
+  font-size: clamp(0.8rem, 0.8vw, 1.6rem);
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #ff2828e5;
+  display: flex;
+  align-items: center;
+}
+
+svg.error-notification-message {
+  margin-right: 0.35rem;
+}

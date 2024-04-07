@@ -1,0 +1,113 @@
+nav.primary-navigation {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 8.5rem;
+  border-top: 0.05rem solid #00000099;
+  background-color: var(--primary-white-color);
+  padding: 1.4rem 2.1rem 4.7rem 2rem;
+  z-index: 1;
+}
+
+ul.nav-list {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  height: 2.4rem;
+}
+
+ul.nav-list svg:hover {
+  fill: black;
+}
+
+@media (min-width: 768px) {
+  nav.primary-navigation,
+  ul.nav-list {
+    all: unset;
+  }
+
+  nav.primary-navigation {
+    height: 100vh;
+    width: clamp(20rem, 20vw, 31.1rem);
+    max-width: 20rem;
+    border-right: 0.1rem solid rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .primary-navigation div.brand1-container {
+    margin-top: clamp(1.6rem, 1.6vw, 2.1rem);
+  }
+
+  ul.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  }
+
+  ul.nav-list:first-of-type {
+    height: 33.8rem;
+    margin-top: clamp(3rem, 3vw, 5.4rem);
+    margin-top: 5.4rem;
+  }
+
+  ul.nav-list:last-of-type {
+    margin-top: 5.4rem;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+    justify-content: space-around;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 1307px) {
+  nav.primary-navigation {
+    width: clamp(20rem, 20vw, 31.1rem);
+    max-width: 31.1rem;
+  }
+  ul.nav-list {
+    align-items: unset;
+  }
+
+  li.nav-list-item a {
+    display: flex;
+    /* align-items: center; */
+    transition: color 0.3s ease-in-out;
+  }
+
+  li.nav-list-item a:hover,
+  li.nav-list-item:not(:last-of-type) a.active {
+    color: var(--light-blue);
+  }
+
+  li.nav-list-item a img {
+    width: 2.783rem;
+    height: 2.7rem;
+  }
+
+  li.nav-list-item a p {
+    margin-left: 1.5rem;
+    font-size: 2.2rem;
+    line-height: 2.682rem;
+    font-weight: var(--small-fw);
+    opacity: 0.7;
+    transform: scale(0.7);
+    animation: fade-in 0.3s linear forwards;
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

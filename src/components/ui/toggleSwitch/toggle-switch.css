@@ -1,0 +1,27 @@
+label.toggle-switch {
+  display: block;
+  border: 0.1rem solid #000;
+  width: 4.8rem;
+  height: 2.6rem;
+  border-radius: 5rem;
+  padding: 0.1rem;
+  cursor: pointer;
+}
+
+div.toggle-activity-ball {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #0000009e;
+  border-radius: 50%;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+input#switch {
+  all: unset;
+  display: none;
+}

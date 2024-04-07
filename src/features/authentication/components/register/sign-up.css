@@ -1,0 +1,261 @@
+article.sign-up-container {
+  min-height: 81.2rem;
+  max-height: 96.7rem;
+  position: relative;
+  width: clamp(28rem, 100%, 144rem);
+}
+
+div.register-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 4.1rem;
+  margin-top: 1.3rem;
+}
+
+div.register-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+img.register-image {
+  width: clamp(24.7rem, 65.8vw, 58.9rem);
+  height: clamp(19.6rem, 24.1vw, 43.958rem);
+}
+
+div.register-brand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.register-brand-logo {
+  width: clamp(10.2rem, 21.1vw, 17.2rem);
+  height: clamp(10.1rem, 21.1vw, 17rem);
+}
+
+form.register-form {
+  display: grid;
+  gap: 2rem;
+  width: clamp(20rem, 89.6%, 50.8rem);
+  margin: 0 auto;
+}
+
+.register-form div.input-container {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+
+.register-form h3 {
+  color: var(--light-blue);
+  font-size: var(--m-big-font-title);
+  font-weight: var(--small-fw);
+  line-height: var(--m-big-line-height);
+}
+
+.register-form input,
+.register-form select {
+  width: 100%;
+  height: clamp(5.3rem, 5.3vw, 7rem);
+  border: 0.1rem solid var(--tertiary-dark);
+  border-radius: 1.6rem;
+  padding: 1.5rem;
+}
+
+.register-form input::placeholder,
+.register-form select::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: clamp(var(--m-small-text-size), 1.5vw, 1.6rem);
+  font-weight: var(--ex-small-fw);
+}
+
+.register-form select {
+  outline: none;
+}
+
+.register-form button {
+  width: 100%;
+  height: clamp(5.3rem, 5.3vw, 7rem);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  color: var(--primary-white-color);
+  background-color: var(--light-blue);
+  font-size: var(--m-medium-text-size);
+  font-weight: var(--small-fw);
+}
+
+.register-form div.password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: clamp(5.3rem, 5.3vw, 7rem);
+  border: 0.1rem solid var(--tertiary-dark);
+  border-radius: 1.6rem;
+}
+
+div.password input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+div.password button {
+  width: auto;
+  height: 100%;
+  font-size: clamp(1rem, 1vw, 1.4rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(1.219, 1.2vw, 11.707rem);
+  background-color: transparent;
+  color: #000000b2;
+  padding: 1.5rem;
+}
+
+div.login-disclaimer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(20rem, 89.6%, 50.8rem);
+  margin: 0 auto;
+  margin-top: 2.3rem;
+}
+
+div.disclaimer-content {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+
+div.login-call-to-action {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  margin-top: 2.3rem;
+}
+
+p.disclaimer-text {
+  font-size: var(--m-medium-text-size);
+  font-weight: var(--ex-small-fw);
+  line-height: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+}
+
+div.login-disclaimer-container a {
+  color: var(--light-blue);
+  font-weight: var(--normal-fw);
+  font-size: 1.6rem;
+  font-weight: var(--normal-fw);
+  line-height: 2.5rem;
+}
+
+div.login-call-to-action a {
+  margin-left: 1.7rem;
+}
+
+@media (min-width: 618px) {
+  div.register-wrapper {
+    margin-top: unset;
+    min-height: 81.2rem;
+    max-height: 96.7rem;
+  }
+
+  div.register-image-container {
+    background-color: #d89785;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .register-image-container h3 {
+    width: 28.8rem;
+    height: 4.6rem;
+    font-size: clamp(2.2rem, 2.3vw, 3.8rem);
+    font-weight: var(--small-fw);
+    line-height: clamp(2.5rem, 2.5vw, 4.6rem);
+    color: var(--primary-white-color);
+    text-align: center;
+    margin-top: 3.4rem;
+  }
+
+  .register-image-container p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: center;
+    color: var(--primary-white-color);
+  }
+
+  div.register-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.register-brand-container {
+    width: 17.2rem;
+    height: 17.2rem;
+    margin: 0 auto;
+  }
+
+  form.register-form {
+    margin-top: 1.8rem;
+  }
+
+  div.login-disclaimer-container,
+  div.login-call-to-action {
+    margin-top: 3.4rem;
+  }
+}
+
+div.signup-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(20rem, 87.2%, 37.2rem);
+  height: 2.5rem;
+  margin: 0 auto;
+  /* margin-top: 1.1rem; */
+}
+
+.signup-checkbox p {
+  width: clamp(14.2rem, 14.2vw, 16.3rem);
+  font-size: clamp(1rem, 1vw, 1.1rem);
+  font-weight: var(--ex-small-fw);
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 8rem;
+  margin-left: 1.6rem;
+}
+.checkbox div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.checkbox label {
+  font-size: clamp(1rem, 1.2vw, 1.6rem);
+  font-size: clamp(1rem, 1vw, 1.1rem);
+  font-weight: var(--small-fw);
+  font-weight: bold;
+  line-height: 2.5rem;
+  text-align: center;
+  margin-right: 0.6rem;
+}
+
+.checkbox input {
+  cursor: pointer;
+}

@@ -1,0 +1,64 @@
+article.profile-avatar-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+div.profile-avatar-wrapper {
+  width: clamp(20rem, 100%, 97rem);
+  max-width: 97rem;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+div.profile-avatar-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+div.profile-avatar-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+ul.profile-avatar-list {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(3rem, 1fr));
+  gap: 1.5rem;
+  /* overflow-y: scroll; */
+  margin-top: 2.1rem;
+}
+
+li.profile-avatar-item {
+  width: clamp(3rem, 10vw, 14rem);
+  height: clamp(3rem, 10vw, 14rem);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-avatar-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  div.profile-avatar-wrapper {
+    border-radius: 3rem;
+  }
+
+  ul.profile-avatar-list {
+    gap: 2.6rem;
+    /* margin: 0 auto; */
+  }
+}

@@ -1,0 +1,75 @@
+aside.society-widget {
+  margin-top: 0.5rem;
+  width: clamp(20rem, 100%, 28.5rem);
+}
+
+div.society-widget-wrapper {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 1rem;
+}
+
+div.society-widget-img {
+  width: clamp(20rem, 20vw, 25.4rem);
+  height: clamp(10rem, 10vw, 19.9rem);
+  margin-top: clamp(4rem, 4vw, 6rem);
+}
+
+.society-widget img {
+  width: 100%;
+  height: inherit;
+}
+
+div.society-widget-text {
+  margin-top: 1.4rem;
+  display: grid;
+  place-items: center;
+}
+
+.society-widget-text h3 {
+  font-size: clamp(2rem, 2vw, 3rem);
+  font-weight: var(--small-fw);
+  line-height: 3.657rem;
+  height: 3.7rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.society-widget-text p {
+  margin-top: 1.4rem;
+  font-size: clamp(1.3em, 1.3vw, 2.2rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(2rem, 2vw, 2.682rem);
+  width: 22.2rem;
+  color: #000;
+  text-align: center;
+}
+
+div.society-widget-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: clamp(2rem, 2vw, 3rem);
+}
+
+button.confidante-button {
+  width: 100%;
+  font-size: clamp(1.4rem, 1.4vw, 1.8rem);
+  font-weight: var(--ex-small-fw);
+  line-height: 2.194rem;
+  background-color: #d3e1ff;
+  border-radius: 1.5rem;
+  padding: 0.8rem 2.4rem;
+}
+
+button.exit-society {
+  width: 17.5rem;
+  height: 5.5rem;
+  padding: 0.8rem 2.4rem;
+  /* margin-top: clamp(6rem, 6vw, 12.8rem); */
+  font-size: clamp(1.4rem, 1.4vw, 1.8rem);
+  font-weight: var(--ex-small-fw);
+  line-height: 2.194rem;
+  outline: 0.1rem solid #ff4040;
+  border-radius: 1.2rem;
+}

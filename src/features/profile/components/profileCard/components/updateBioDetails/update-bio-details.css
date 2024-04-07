@@ -1,0 +1,165 @@
+article.update-bio-container {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000d6;
+  z-index: 2;
+}
+
+form.update-bio-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+div.update-bio-header {
+  width: 61%;
+  height: clamp(5.2rem, 5.2vw, 9.4rem);
+  padding: 0rem 1.8rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.update-bio-header {
+  width: clamp(4rem, 4vw, 5.3rem);
+  height: clamp(3.9rem, 3.9vw, 5.2rem);
+}
+
+div.update-bio-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.update-bio-head svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.update-bio-form h2.update-profile-head {
+  width: clamp(11.5rem, 11.5vw, 15.6rem);
+  height: clamp(3.3rem, 3.3vw, 4.5rem);
+  font-size: clamp(2.2rem, 2.2vw, 3rem);
+  font-weight: 500;
+  line-height: clamp(3.3rem, 3.3vw, 4.5rem);
+  margin-top: clamp(1.1rem, 1.1vw, 3.9rem);
+}
+
+label.update-bio-avatar-label {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: #00000066;
+  position: relative;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.update-bio-avatar-label img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.update-bio-avatar-label svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input#avatar {
+  display: none;
+}
+
+div.display-name,
+div.bio {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.display-name label,
+.bio label {
+  font-size: clamp(1.8rem, 1.8vw, 2.4rem);
+  font-weight: 400;
+  line-height: clamp(2.7rem, 2.7vw, 3.6rem);
+  color: #000000d9;
+  width: clamp(12.5rem, 12.5vw, 16.7rem);
+  height: clamp(2.7rem, 2.7vw, 3.6rem);
+}
+
+.display-name input {
+  border: 0.1rem solid #000000cf;
+  height: clamp(4rem, 4vw, 7.1rem);
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+div.bio {
+  margin-top: 1.7rem;
+}
+
+.bio textarea {
+  border: 0.1rem solid #000000cf;
+  height: 20.6rem;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.display-name input::placeholder,
+.bio textarea::placeholder {
+  font-size: clamp(1.4rem, 1.4vw, 2.2rem);
+  font-weight: 400;
+  line-height: clamp(2.1rem, 2.1vw, 3.3rem);
+  color: #000000bf;
+}
+
+.bio textarea::-webkit-scrollbar {
+  display: none;
+}
+
+button.update-bio-btn {
+  width: clamp(21.7rem, 21.7rem, 31.8rem);
+  height: clamp(4.2rem, 4.2vw, 7.4rem);
+  background-color: var(--light-blue);
+  color: #fff;
+  border-radius: 1.2rem;
+  margin: 0 auto;
+  margin-top: clamp(2.1rem, 2.1vw, 2.5rem);
+  font-size: clamp(1.8rem, 1.8vw, 2.8rem);
+  font-weight: 500;
+  line-height: clamp(2.194rem, 2.194vw, 3.413rem);
+}
+
+button.update-bio-btn:hover {
+  background-color: red;
+}
+
+@media (min-width: 768px) {
+  article.update-bio-container {
+    max-height: 67.8rem;
+    place-items: center;
+  }
+
+  form.update-bio-form {
+    width: clamp(20rem, 100%, 66.2rem);
+    height: unset;
+    border-radius: 3rem;
+  }
+
+  label.update-bio-avatar-label {
+    margin-top: 1.9rem;
+  }
+
+  .bio textarea {
+    height: 18.9rem;
+  }
+}

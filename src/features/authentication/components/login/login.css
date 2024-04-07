@@ -1,0 +1,195 @@
+article.login-container {
+  min-height: 81.2rem;
+  max-height: 96.7rem;
+  position: relative;
+  width: clamp(28rem, 100%, 144rem);
+}
+
+div.login-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 3.5rem;
+  margin-top: 7.4rem;
+}
+
+div.login-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+img.login-image {
+  width: clamp(24.7rem, 65.8vw, 58.9rem);
+  height: clamp(19.6rem, 24.1vw, 43.958rem);
+}
+
+div.login-brand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.login-brand-logo {
+  width: clamp(10.2rem, 21.1vw, 17.2rem);
+  height: clamp(10.1rem, 21.1vw, 17rem);
+}
+
+form.login-form {
+  display: grid;
+  gap: 1.6rem;
+  width: clamp(20rem, 89.6%, 50.8rem);
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.login-form div.input-container {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+
+.login-form h3 {
+  color: var(--light-blue);
+  font-size: var(--m-big-font-title);
+  font-weight: var(--small-fw);
+  line-height: var(--m-big-line-height);
+}
+
+.login-form input {
+  width: 100%;
+  height: clamp(5.3rem, 5.3vw, 7rem);
+  border: 0.1rem solid var(--tertiary-dark);
+  border-radius: 1.6rem;
+  padding: 1.5rem;
+}
+
+.login-form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: clamp(var(--m-small-text-size), 1.5vw, 1.6rem);
+  font-weight: var(--ex-small-fw);
+}
+
+.login-form div.password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: clamp(5.3rem, 5.3vw, 7rem);
+  border: 0.1rem solid var(--tertiary-dark);
+  border-radius: 1.6rem;
+}
+
+div.password input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+div.password button {
+  width: auto;
+  height: 100%;
+  font-size: clamp(1rem, 1vw, 1.4rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(1.219, 1.2vw, 11.707rem);
+  background-color: transparent;
+  color: #000000b2;
+  padding: 1.5rem;
+}
+
+.login-form button {
+  width: 100%;
+  height: clamp(5.3rem, 5.3vw, 7rem);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  color: var(--primary-white-color);
+  background-color: var(--light-blue);
+  font-size: var(--m-medium-text-size);
+  font-weight: var(--small-fw);
+}
+
+div.new-user-call-to-action-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23.7rem;
+  height: 2.5rem;
+  margin: 0 auto;
+  margin-top: 3.4rem;
+}
+
+p.call-to-action-text,
+a.call-to-action-link {
+  font-size: var(--m-medium-text-size);
+  line-height: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+}
+
+p.call-to-action-text {
+  font-weight: var(--ex-small-fw);
+  width: 15.6rem;
+}
+
+a.call-to-action-link {
+  width: 6.4rem;
+  color: var(--light-blue);
+  font-weight: var(--normal-fw);
+}
+
+@media (min-width: 618px) {
+  div.login-wrapper {
+    margin-top: unset;
+    min-height: 81.2rem;
+    max-height: 96.7rem;
+  }
+
+  div.login-image-container {
+    background-color: #b3e1f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .login-image-container h3 {
+    width: 28.8rem;
+    height: 4.6rem;
+    font-size: clamp(2.2rem, 2.3vw, 3.8rem);
+    font-weight: var(--small-fw);
+    line-height: clamp(2.5rem, 2.5vw, 4.6rem);
+    color: var(--primary-white-color);
+    text-align: center;
+    margin-top: 3.4rem;
+  }
+
+  .login-image-container p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: center;
+    color: var(--primary-white-color);
+  }
+
+  div.login-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.login-brand-container {
+    width: 17.2rem;
+    height: 17.2rem;
+    margin: 0 auto;
+  }
+
+  form.login-form {
+    margin-top: 3.4rem;
+  }
+}

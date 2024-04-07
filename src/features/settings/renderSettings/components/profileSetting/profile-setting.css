@@ -1,0 +1,77 @@
+section.profile-setting {
+  padding: 0 2rem;
+  max-width: 101rem;
+}
+
+h2.profile-setting {
+  color: var(--light-blue);
+  font-size: clamp(1.5rem, 1.5vw, 2.8rem);
+  font-weight: 500;
+  line-height: clamp(2.4rem, 2.4vw, 3.413rem);
+  letter-spacing: 0.02em;
+  margin-top: 2.6rem;
+  margin-top: 2.6rem;
+}
+
+form.profile-setting-container {
+  border: 0.1rem solid #00000080;
+  border-radius: 1.2rem;
+  margin-top: 1.8rem;
+  padding: 1rem;
+}
+
+form.profile-setting-container div label,
+h3.profile-setting {
+  font-size: clamp(1.2rem, 1vw, 1.6rem);
+  font-weight: 500;
+  line-height: clamp(1.8rem, 1.8vw, 2.438rem);
+  letter-spacing: 0.02rem;
+  color: #000000db;
+  max-width: 70%;
+}
+
+form.profile-setting-container > div {
+  display: grid;
+  margin-top: 1.1rem;
+}
+
+div.profile-setting {
+  display: flex !important;
+  margin-top: clamp(3rem, 3vw, 5.8rem) !important;
+  justify-content: space-between !important;
+}
+
+form.profile-setting-container input {
+  border: 0.1rem solid #263238;
+  border-radius: 0.8rem;
+  height: 4.3rem;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+button.profile-setting-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: clamp(2.9rem, 2.9vw, 3.5rem);
+  background-color: var(--light-blue);
+  color: #fafafa;
+  width: 21.2rem;
+  height: 5rem;
+  border-radius: 1.2rem;
+  padding: 1rem 2rem;
+  font-size: clamp(1.5rem, 1.5vw, 2.2rem);
+  font-size: 500;
+  line-height: clamp(2.194rem, 2.194vw, 2.682rem);
+}
+
+@media (min-width: 768px) {
+  /* form.profile-setting-container > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  } */
+
+  /* form.profile-setting-container input {
+    margin-top: 0rem;
+  } */
+}

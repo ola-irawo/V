@@ -1,0 +1,12 @@
+button.comment-btn {
+  width: auto;
+  height: 2.4rem;
+  /* border: 0.2rem solid blue; */
+}
+
+button.comment-btn div {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  align-items: center;
+  gap: 0.6rem;
+}

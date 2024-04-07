@@ -1,0 +1,14 @@
+main.home-container {
+  margin-top: clamp(0.8rem, 0.8vw, 1.1rem);
+}
+
+div.home-layout {
+  width: clamp(28rem, 100%, 80.6rem);
+}
+
+@media (min-width: 1030px) {
+  main.home-container {
+    width: clamp(28rem, 100%, 112.9rem);
+    display: flex;
+  }
+}

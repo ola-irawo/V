@@ -1,0 +1,95 @@
+aside.home-widget {
+  display: none;
+  margin-top: 1.5rem;
+  width: clamp(25rem, 100%, 28rem);
+  padding-right: 0.8rem;
+}
+
+div.home-widget-wrapper {
+  display: grid;
+  gap: 5.4rem;
+}
+
+div.home-widget-btn-container {
+  display: grid;
+  gap: 3rem;
+}
+
+.home-widget-btn-container button {
+  width: 100%;
+  font-size: clamp(1.4rem, 1.4vw, 1.8rem);
+  font-weight: var(--ex-small-fw);
+  line-height: 2.194rem;
+  background-color: #d3e1ff;
+  border-radius: 1.5rem;
+  padding: 0.8rem 2.4rem;
+}
+
+div.home-widget-confidante {
+  display: grid;
+  text-align: center;
+  border-radius: 1.2rem;
+}
+
+div.confidante-widget {
+  background-color: #000000;
+  height: 16.6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-top-right-radius: 1.2rem;
+  border-top-left-radius: 1.2rem;
+}
+
+.confidante-widget img {
+  flex: 3;
+  width: 100%;
+  height: 10rem;
+}
+
+.confidante-widget h3 {
+  font-weight: var(--normal-fw);
+  font-size: 2rem;
+  line-height: 2.438rem;
+  color: var(--primary-white-color);
+}
+
+div.confidante-widget-text {
+  width: 100%;
+  border: 0.1rem solid #00000080;
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  border-top: none;
+}
+
+.confidante-widget-text p {
+  width: 92.6%;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(2.2rem, 2.2vw, 3rem);
+  font-size: clamp(var(--m-small-text-size), 1.4vw, var(--m-medium-text-size));
+  color: #000000cc;
+}
+
+.home-widget-confidante button {
+  width: 14.5rem;
+  height: 4.6rem;
+  margin: 0 auto;
+  margin-top: 1.4rem;
+  margin-bottom: 0.9rem;
+  font-size: clamp(1.4rem, 1.4vw, 1.8rem);
+  font-weight: var(--small-fw);
+  line-height: 3rem;
+  background-color: transparent;
+  border: 0.1rem solid #263238;
+  border-radius: 1.2rem;
+  padding: 0.8rem 2.4rem;
+  color: #263238;
+}
+
+@media (min-width: 1030px) {
+  aside.home-widget {
+    display: block;
+  }
+}

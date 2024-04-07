@@ -1,0 +1,19 @@
+/* main.society-container {
+  margin-top: clamp(1.2rem, 1.5vw, 2.5rem);
+}
+
+@media (min-width: 1030px) {
+  main.society-container {
+    width: clamp(28rem, 100%, 112.9rem);
+    display: flex;
+    grid-template-columns: 1fr 0.1fr;
+  }
+} */
+
+main.society-container {
+  margin-top: clamp(0.8rem, 0.8vw, 1.1rem);
+}
+
+div.society-layout {
+  display: flex;
+}

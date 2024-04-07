@@ -1,0 +1,64 @@
+aside.comment-action-container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1;
+  background-color: #0001;
+}
+
+ul.comment-action-list {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 2rem 2rem 0 0;
+  background-color: #fff;
+  padding: 1.8rem;
+  transform: translateY(10rem);
+  transition: transform 0.3s linear;
+  animation: option-slide-in 0.3s linear forwards;
+}
+
+@keyframes option-slide-in {
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+ul.comment-action-list button {
+  font-size: clamp(1.6rem, 1.6vw, 2.5rem);
+  font-weight: var(--small-fw);
+  line-height: 1rem;
+}
+
+aside.screen {
+  top: 0;
+  transform: translateY(0rem);
+}
+
+aside.screen ul.comment-action-list {
+  height: auto;
+  right: 0;
+  top: 0;
+  bottom: unset;
+  width: 36.8rem;
+  border-radius: 2rem;
+  transform: translateY(0rem);
+  transition: transform 0.3s linear;
+  animation: unset;
+}
+
+@media (min-width: 768px) {
+  ul.comment-action-list {
+    padding: 1.8rem 16.6rem 1.7rem 2.6rem;
+  }
+
+  ul.comment-action-list button {
+    line-height: 3.48rem;
+  }
+}

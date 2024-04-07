@@ -1,0 +1,104 @@
+article.society-article {
+  width: clamp(20rem, 89%, 78rem);
+  margin: 0 auto;
+  margin-top: 4.5rem;
+  background-color: var(--primary-white-color);
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+
+div.society-header {
+  max-height: 34.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.society-image {
+  width: clamp(9.9rem, 22vw, 22rem);
+  height: clamp(9.9rem, 22vw, 22rem);
+  border-radius: 50%;
+}
+
+div.society-text-container {
+  text-align: center;
+}
+
+.society-text-container h2 {
+  margin-top: 0.6rem;
+  font-size: clamp(var(--m-medium-font-title), 2.3vw, 3.8rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(var(--m-normal-line-height), 2vw, 4.632rem);
+}
+
+.society-text-container p {
+  margin-top: 0.6rem;
+  font-size: clamp(var(--m-small-text-size), 1.6vw, 1.8rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 2vw, 3.169rem);
+}
+
+div.society-support-container {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2.9rem;
+}
+
+/* div.society-support {
+  height: clamp(10rem, 10vw, 28.7rem);
+} */
+
+img.support-image {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+img.support-image:hover {
+  transform: scale(0.98);
+}
+
+div.support-info-container {
+  text-align: center;
+}
+
+.support-info-container h3 {
+  font-size: clamp(var(--m-small-text-size), 1.6vw, 3rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(var(--m-small-line-height), 2vw, 3.657rem);
+}
+
+.support-info-container p {
+  font-size: clamp(var(--m-ex-small-text-size), 1.4vw, 2rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 2vw, 2.438rem);
+}
+
+@media (min-width: 618px) {
+  div.society-support-container {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  article.society-article {
+    padding: 4.2rem 6.3rem 7.6rem 6.5rem;
+  }
+
+  div.society-header {
+    margin-top: 7rem;
+  }
+
+  .society-text-container h2,
+  .society-text-container p {
+    margin-top: 1.6rem;
+  }
+
+  div.society-support-container {
+    margin-top: 3rem;
+  }
+}

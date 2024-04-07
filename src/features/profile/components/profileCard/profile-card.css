@@ -1,0 +1,75 @@
+section.profile-card-section {
+  width: clamp(28rem, 100%, 80.6rem);
+}
+
+article.profile-card {
+  width: clamp(20rem, 95%, 76.9rem);
+  margin: 0 auto;
+}
+
+div.profile-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.9rem;
+}
+
+div.profile-details {
+  display: flex;
+  align-items: center;
+}
+
+div.profile-avatar-container {
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  border: 0.0001rem solid #0003;
+}
+
+img.profile-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+div.profile-metadata-container {
+  margin-left: clamp(0.1rem, 0.2vw, 1rem);
+}
+
+h3.profile-name {
+  font-size: clamp(var(--m-medium-text-size), 2.6vw, 2.6rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(var(--m-ex-small-line-height), 2.9vw, 3.169rem);
+}
+
+small.profile-creation-date {
+  font-size: clamp(1rem, 1vw, 1.6rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(1.463rem, 2vw, 19.5rem);
+}
+
+button.profile-btn {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.7);
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 1.2rem;
+  width: clamp(8rem, 10vw, 14.4rem);
+  height: clamp(3.3rem, 4.3vw, 5rem);
+  padding: 0.4rem 0.6rem;
+  font-size: clamp(1rem, 1vw, 1.8rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(1.707rem, 1.7vw, 2.194rem);
+  letter-spacing: 0.036rem;
+}
+
+div.profile-bio-container {
+  width: 100%;
+  margin-top: clamp(1.2rem, 1.6vw, 2.1rem);
+}
+
+p.profile-bio {
+  font-weight: 300;
+  font-size: clamp(1.2rem, 1.2vw, 1.8rem);
+  line-height: clmap(1.4.63rem, 1.4vw, 21.94rem);
+  letter-spacing: 0.024rem;
+}

@@ -1,0 +1,41 @@
+section.society-rule-container {
+  max-width: 80.6rem;
+}
+
+article.society-rule-article {
+  max-width: 79.1rem;
+  margin: 0 auto;
+}
+
+h2.society-rule-header {
+  font-size: clamp(1.7rem, 1.7vw, 2.3rem);
+  font-weight: var(--small-fw);
+  line-height: clamp(2.72, 2vw, 2.84rem);
+  margin-top: 1.8rem;
+}
+
+ul.society-rule-list {
+  display: grid;
+  gap: 1.3rem;
+  margin-top: clamp(0.8rem, 0.8vw, 1.1rem);
+}
+
+li.society-rule-item {
+  font-size: clamp(var(--m-small-text-size), 1.4vw, 1.8rem);
+  font-weight: var(--ex-small-fw);
+  line-height: clamp(2.6rem, 2.6vw, 2.5rem);
+}
+
+li.society-rule-item p {
+  line-height: clamp(2rem, 2vw, 2.5rem);
+}
+
+@media (min-width: 768px) {
+  section.society-rule-container {
+    position: unset;
+  }
+
+  ul.society-rule-list {
+    gap: 2rem;
+  }
+}
